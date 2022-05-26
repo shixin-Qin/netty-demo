@@ -1,0 +1,22 @@
+syntax ="proto3";
+
+package com.lagou.vo;
+
+
+option optimize_for = SPEED;
+option java_package = "com.lagou.vo";
+option java_outer_classname="MessageData";
+
+
+message RequestUser{
+    optional string user_name = 1;
+    optional int32 age = 2;
+    optional string password = 3;
+}
+
+
+message ResponseUser{
+    optional string user_name = 1;
+    optional int32 age = 2;
+    optional string password = 3;
+}
